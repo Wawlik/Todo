@@ -126,7 +126,7 @@ export default {
 				let txt = 'Вы уверены, что хотите отменить редактирование и перейти на главную?';
 				window.UIkit.modal.confirm(txt).then(
 					function () {
-						self.$router.push('/');
+						self.$router.push('/Todo/');
 					},
 					function () {
 						return 0;
