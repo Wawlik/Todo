@@ -1,7 +1,7 @@
 <template>
 	<div id="app" class="uk-container uk-margin">
 		<h3 class="uk-text-left">
-			<router-link class="uk-link-reset uk-grid uk-grid-collapse uk-flex-middle" to="/">
+			<router-link class="uk-link-reset uk-grid uk-grid-collapse uk-flex-middle" to="/Todo">
 				<span uk-icon="home" class="cursor-pointer uk-margin-small-right"></span>
 				<span>Главная</span>
 			</router-link>

@@ -56,7 +56,7 @@
 		</h3>
 		<div v-if="tasks && tasks.length" class="uk-grid uk-grid-small">
 			<router-link
-				:to="'/note/'+index"
+				:to="'/Todo/note/'+index"
 				class="uk-link-reset uk-width-1-1 uk-width-1-2@s uk-width-1-3@m uk-width-1-4@xl uk-margin-small-bottom"
 				v-for="(one, index) in tasks"
 				:key="one.id"
@@ -109,29 +109,7 @@ export default {
 		return {
 			ctask: "",
 			newTask: "",
-			tasks: [
-				{
-					name: "Заметка",
-					todo: [
-						{
-							name: "Вынести мусор",
-							done: false
-						},
-						{
-							name: "Вынести мусор",
-							done: true
-						},
-						{
-							name: "Вынести мусор",
-							done: false
-						},
-						{
-							name: "Вынести мусор",
-							done: true
-						}
-					]
-				}
-			],
+			tasks: null,
 			lskey: "tasks"
 		};
 	},
