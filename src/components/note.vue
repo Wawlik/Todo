@@ -141,7 +141,7 @@ export default {
 			let a = await this.confirmDelete(index, name);
 			if (a) {
 				// move to main
-				this.$router.push("/");
+				this.$router.push("/Todo/");
 			} else {
 				// declined
 			}
